@@ -4,9 +4,9 @@ fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDe
 game:GetService("ReplicatedStorage").IceSkate:FireServer("Freeze")
 fireclickdetector(workspace.Lobby["ZZZZZZZ"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
-			 repeat task.wait()
-			 game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
-			 until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
+	repeat task.wait()
+	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
+	until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
 end
 local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
