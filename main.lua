@@ -15,7 +15,7 @@ if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 			 else
 			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
-wait(10)
+wait(60)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
