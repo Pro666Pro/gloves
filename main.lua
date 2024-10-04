@@ -1,3 +1,35 @@
+if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
+			 Door = 0
+			 for i = 1, 10 do
+			 Door = Door + 1
+			 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
+			 Door = nil
+			 else
+			 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 0)
+			 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 1)
+			 wait(3.75)
+			 end
+			 end
+			 else
+			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
+end
+fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
+if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
+			 OGL = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8, 97, 4)
+			 wait(0.2)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+			 wait(0.3)
+			 game:GetService("ReplicatedStorage").Fortlol:FireServer()
+			 wait(3.5)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+			 wait(0.1)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8, 106, -6)
+			 wait(0.5)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OGL
+			 else
+			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Failed to equip fort" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
+end
 fireclickdetector(game.Workspace.Lobby.Scene.knofe.ClickDetector)
 fireclickdetector(game.Workspace.Arena.island5.Orange.ClickDetector) 
 fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDetector)
