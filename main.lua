@@ -67,6 +67,7 @@ for i,v in ipairs(game:GetService("Workspace"):GetDescendants()) do
                 fireproximityprompt(v)
             end
         end
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Fan + Boxer" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/sus/main/main.lua'))()
 ]])
 end
