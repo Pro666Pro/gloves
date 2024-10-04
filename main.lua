@@ -42,7 +42,7 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
 	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
 	until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
 end
-wait(20)
+wait(10)
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then
         teleportFunc([[
