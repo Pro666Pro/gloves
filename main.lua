@@ -1,4 +1,4 @@
---Auto Get
+--Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting [REDACTED]" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 			 Door = 0
