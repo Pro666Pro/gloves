@@ -32,7 +32,7 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 wait(0.5)
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OGL
 			 else
-			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Failed to equip fort" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
+			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
 wait(10)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Lonely Orange" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
