@@ -1,3 +1,5 @@
+--Auto Get
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting [REDACTED]" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 			 Door = 0
 			 for i = 1, 10 do
@@ -13,7 +15,8 @@ if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 			 else
 			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
-wait(3)
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 OGL = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -31,18 +34,25 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 else
 			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Failed to equip fort" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
-wait(3)
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Lonely Orange" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Rubber Ducky" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Court Evidence" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(game.Workspace.Lobby.Scene.knofe.ClickDetector)
 fireclickdetector(game.Workspace.Arena.island5.Orange.ClickDetector) 
 fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDetector)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting IceSkate" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 game:GetService("ReplicatedStorage").IceSkate:FireServer("Freeze")
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Lamp" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["ZZZZZZZ"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
 	repeat task.wait()
 	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
 	until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
 end
-wait(10)
+wait(8)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Frostbite" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+wait(2)
 local teleportFunc = queueonteleport or queue_on_teleport
     if teleportFunc then
         teleportFunc([[
