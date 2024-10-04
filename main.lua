@@ -13,6 +13,7 @@ if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 			 else
 			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
+wait(3)
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 OGL = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -30,6 +31,7 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 else
 			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Failed to equip fort" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
+wait(3)
 fireclickdetector(game.Workspace.Lobby.Scene.knofe.ClickDetector)
 fireclickdetector(game.Workspace.Arena.island5.Orange.ClickDetector) 
 fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDetector)
@@ -40,6 +42,7 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
 	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
 	until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
 end
+wait(3)
 local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
