@@ -1,21 +1,4 @@
 --Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting [REDACTED]" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
-			 Door = 0
-			 for i = 1, 10 do
-			 Door = Door + 1
-			 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
-			 Door = nil
-			 else
-			 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 0)
-			 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 1)
-			 wait(3.75)
-			 end
-			 end
-			 else
-			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
-end
-wait(60)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
