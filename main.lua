@@ -1,6 +1,7 @@
 --Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
+wait(0.5)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 OGL = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8, 97, 4)
@@ -15,9 +16,9 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "Fort" then
 			 wait(0.5)
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OGL
 			 else
-			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
+			 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Failed To Equip Fort / Not Enough Slaps" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "dang it"})
 end
-wait(10)
+wait(5)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Lonely Orange" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Rubber Ducky" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Court Evidence" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
@@ -28,6 +29,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text =
 game:GetService("ReplicatedStorage").IceSkate:FireServer("Freeze")
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Lamp" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["ZZZZZZZ"].ClickDetector)
+wait(0.5)
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
 	repeat task.wait()
 	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
