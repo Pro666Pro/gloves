@@ -77,7 +77,7 @@ for i,v in ipairs(game:GetService("Workspace"):GetDescendants()) do
             end
         end
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Bind" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/BindSus/main/main.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/SlapBattlesTP/main/main.lua'))()
 ]])
 end
 game:GetService("TeleportService"):Teleport(17290438723)
