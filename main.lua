@@ -1,4 +1,4 @@
---Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter, Bind, Glovel, Chain
+--Auto Get Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter, Bind, Glovel, Chain
 -- 12 gloves!!
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Glovel" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
@@ -22,24 +22,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.BountyHun
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Error / Enter Arena First / Take Quest" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 end
-wait(10)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting [REDACTED]" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
-Door = 0
-for i = 1, 10 do
-Door = Door + 1
-if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2124847850) then
-Door = nil
-else
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 0)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 1)
-wait(3.75)
-end
-end
-else
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps Or Arleady Have That Badge" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
-end
-wait(60)
+wait(5)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 wait(0.5)
