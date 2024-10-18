@@ -1,4 +1,45 @@
---Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter
+--Auto Get [REDACTED], Fort, Lamp, Iceskate, Frostbite, Fan, Boxer, Elude, Counter, Bind, Glovel, Chain
+-- 12 gloves!!
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Glovel" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+if not game.Players.LocalPlayer.Character:FindFirstChild("entered") and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+repeat task.wait()
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
+until game.Players.LocalPlayer.Character:FindFirstChild("entered")
+end
+wait(1)
+if game.Players.LocalPlayer.Character:FindFirstChild("entered") then
+repeat task.wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(289, 13, 261)
+game:GetService("ReplicatedStorage").DigEvent:FireServer({["index"] = 2,["cf"] = CFrame.new(42.7222366, -6.17449856, 91.5175781, -0.414533257, 1.72594355e-05, -0.91003418, -5.57037238e-05, 1, 4.4339522e-05, 0.91003418, 6.90724992e-05, -0.414533257)})
+until game.Workspace:FindFirstChild("TreasureChestFolder") ~= nil and game.Workspace.TreasureChestFolder:FindFirstChild("TreasureChest") ~= nil
+wait(1)
+game.Workspace.TreasureChestFolder.TreasureChest.OpenRemote:FireServer()
+wait(0.9)
+game:GetService("Players").LocalPlayer.Reset:FireServer()
+wait(3.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.BountyHunterRoom.BountyHunterBooth._configPart.CFrame * CFrame.new(-5,0,0)
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Error / Enter Arena First / Take Quest" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+end
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting [REDACTED]" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
+Door = 0
+for i = 1, 10 do
+Door = Door + 1
+if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 2124847850) then
+Door = nil
+else
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 0)
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.PocketDimension.Doors[Door].TouchInterest.Parent, 1)
+wait(3.75)
+end
+end
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Not Enough Slaps Or Arleady Have That Badge" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
+end
+wait(60)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Plank" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 fireclickdetector(workspace.Lobby["Fort"].ClickDetector)
 wait(0.5)
@@ -35,7 +76,7 @@ if game.Players.LocalPlayer.leaderstats.Glove.Value == "ZZZZZZZ" then
 	game:GetService("ReplicatedStorage").nightmare:FireServer("LightBroken")
 	until game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 490455814138437)
 end
-wait(8)
+wait(5)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Getting Frostbite" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "ok"})
 wait(2)
 local teleportFunc = queueonteleport or queue_on_teleport
